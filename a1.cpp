@@ -18,7 +18,7 @@ using namespace std;
 void bbs(int*, int);
 void qsort(int*, int, int, int&);
 int partition(int*, int, int, int&);
-
+void insertionSort(int*, int);
 
 /*
 Function_identifier: Main entry point for program
