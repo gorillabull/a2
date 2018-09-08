@@ -89,7 +89,7 @@ void bbs(int arr[], int len) {
 
 
 /*
-function_identifier:
+function_identifier: bla bla bla 
 paramaters:
 return value:
 */
