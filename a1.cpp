@@ -105,7 +105,7 @@ void qsort(int arr[], int l, int h, int & cmps) {
 			{
 				insertion_arr[i] = arr[i];
 			}
-			insertionSort(insertion_arr, abs(l - h)); /*todo
+			insertionSort(insertion_arr, abs(l - h)); /*todoss
 			this about hov this vill vork this is not correct
 			*/
 			for (int i = l; i <= h; i++)
