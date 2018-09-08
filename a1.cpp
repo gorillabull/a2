@@ -8,6 +8,7 @@ Input: A file containing a number, one per line
 #include <string>
 #include <iostream>
 #include <sstream>
+#include <math>
 
 
 
