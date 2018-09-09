@@ -9,7 +9,7 @@ Input: A file containing a number, one per line
 #include <string>
 #include <iostream>
 #include <sstream>
- 
+
 #include <math.h>
 
 
@@ -89,9 +89,9 @@ int main() {
 
 }
 /*
-function_identifier:
-paramaters:
-return value:
+function_identifier: Function implements the bubblesort sorting algorithm
+paramaters: arr[] - an array of integers to sort, int len -the number of elements in the array
+return value: void
 */
 void bbs(int arr[], int len) {
 	int cmps = 0;
@@ -115,9 +115,11 @@ void bbs(int arr[], int len) {
 
 
 /*
-function_identifier: bla bla bla
-paramaters:
-return value:
+function_identifier: Function implements the quicksort algorithm
+paramaters: arr[] the array to be sorted, l - the lowest element in the array to be sorted
+h - the index of the highest element in the set to be sorted
+cmps - an integer to count the number of comparisons made by the algorithm
+return value:void
 */
 void qsort(int arr[], int l, int h, int & cmps) {
 	int pivot = 0;
@@ -131,8 +133,8 @@ void qsort(int arr[], int l, int h, int & cmps) {
 			{
 				insertion_arr[i] = arr[i];
 			}
-			insertionSort(insertion_arr, abs(l - h)); 
-													  
+			insertionSort(insertion_arr, abs(l - h));
+
 			for (int i = l; i <= h; i++)
 			{
 				arr[i] = insertion_arr[i];
@@ -154,9 +156,14 @@ void qsort(int arr[], int l, int h, int & cmps) {
 
 
 /*
-function_identifier:
-paramaters:
-return value:
+/*
+function_identifier:a function to partition a set of integers into two parts
+paramaters:arr the array to split
+l - lowest index in the set
+h - highest index in the set
+cmps - counter for number of comparisons made by the algo
+return value:an integer denoting the location in the list where our chosen pivot
+(in this case the highest element in the array) is in the middle.
 */
 int partition(int arr[], int l, int h, int& cmps) {
 	int pivot = arr[h];
@@ -185,9 +192,10 @@ int partition(int arr[], int l, int h, int& cmps) {
 
 
 /*
-function_identifier:
-paramaters:
-return value:
+function_identifier:A function implementing the insertionSort Algorithm
+paramaters:arr the array to sort
+n the number of elements in the array
+return value:void
 */
 void insertionSort(int arr[], int n)
 {
